@@ -1,0 +1,134 @@
+<!-- https://undraw.co/illustrations  link para imagens--> 
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_produto.css", "cadastro_produto.php">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="../img/cadastro_produto.png" alt="">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre seu produto</h1>
+                    </div>
+                    <div class="login-button">
+                        <button><a href="#">Entrar</a></button>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Nome</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite o nome" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">Descrição</label>
+                        <input id="descricao_produto" type="text" name="descricao_produto" placeholder="Descreva o produto" required>
+                    </div>
+
+                        <div class="input-box">
+                            <label for="estado">Estado</label></br>
+                                <select id="arre_caixa" name="UF">
+                                    <option value="">Selecione</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espirito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                </select>
+                        </div>
+                    <div class="input-box">
+                        <label for="cidade">Cidade</label>
+                        <input id="cidade" type="text" name="cidade" placeholder="Digite a cidade" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="password">Data de validade</label>
+                        <input type="date" name="dataVal" >
+                    </div>
+                    <div class="input-box">
+                        <label for="confirmPassword">Quantidade</label>
+                        <input id="confirmPassword" type="number" min="1" step="1" name="confirmPassword" >
+                    </div>
+
+                </div>
+
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h6>Modo de operação</h6>
+                    </div>
+
+                    <div class="gender-group">
+                        <div>
+                            <div class="gender-input">
+                                <input id="female" type="radio" name="gender">
+                                <label for="female">Troca</label>
+                            </div>
+
+                            <div class="gender-input">
+                                <input id="male" type="radio" name="gender">
+                                <label for="male">Doação</label>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                </br>
+                <div class="input-box">
+                    <label for="categoria">Categorias - Produtos </label></br>
+                        <select id="categoria" name="UF">
+                            <option value="">Selecione</option>
+                            <option value="beleza">Beleza</option>
+                            <option value="saude">Saúde</option>
+                            <option value="casa">Casa</option>
+                            <option value="eletrodomesticos">Eletrodomésticos</option>
+                            <option value="moveis">Móveis</option>
+                            <option value="decoracao">Decoração</option>
+                            <option value="alimentos">Alimentos</option>
+                            <option value="bebidas">Bebidas</option>
+                            <option value="esporte">Esporte</option>
+                            <option value="lazer">Lazer</option>
+                            <option value="eletronicos">Eletrônicos</option>
+                            <option value="pet">Pet (Produtos e Animais)</option>
+                        </select>
+                    </div>
+
+                <div class="continue-button">
+                    <button><a href="#">Continuar</a> </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
